@@ -9,7 +9,7 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/processed/crime_cleaned.csv", low_memory=False)
+    df = pd.read_csv("data/processed/crime_sample.csv", low_memory=False)
     df["date_occ"] = pd.to_datetime(df["date_occ"], errors="coerce")
     return df
 
