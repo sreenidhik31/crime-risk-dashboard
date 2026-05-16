@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(
-    page_title="Crime Risk & Patrol Optimization Dashboard",
+    page_title="Crime Risk Analytics & Resource Allocation Dashboard",
     layout="wide"
 )
 
@@ -15,11 +15,12 @@ def load_data():
 
 df = load_data()
 
-st.title("Crime Risk & Patrol Optimization Dashboard")
+st.title("Crime Risk Analytics & Resource Allocation Dashboard")
 
 st.markdown("""
-This dashboard analyzes Los Angeles crime incidents from 2020 to present.  
-It transforms raw crime records into **descriptive, temporal, geospatial, and patrol decision insights**.
+This interactive dashboard analyzes Los Angeles crime incidents from 2020 to present.
+
+It transforms large-scale crime records into temporal, geospatial, and risk-based operational insights through hotspot analysis, crime density visualization, and patrol allocation recommendations.**.
 """)
 
 st.sidebar.header("Dashboard Filters")
