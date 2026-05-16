@@ -20,7 +20,7 @@ st.title("Crime Risk Analytics & Resource Allocation Dashboard")
 st.markdown("""
 This interactive dashboard analyzes Los Angeles crime incidents from 2020 to present.
 
-It transforms large-scale crime records into temporal, geospatial, and risk-based operational insights through hotspot analysis, crime density visualization, and patrol allocation recommendations.**.
+It transforms large-scale crime records into temporal, geospatial, and risk-based operational insights through hotspot analysis, crime density visualization, and patrol allocation recommendations.
 """)
 
 st.sidebar.header("Dashboard Filters")
