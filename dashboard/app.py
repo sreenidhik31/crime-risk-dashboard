@@ -244,6 +244,7 @@ else:
         opacity=0.5,
         hover_data=["area_name", "crm_cd_desc", "hour"],
         zoom=9,
+        center=dict(lat=34.05, lon=-118.24),
         height=550,
         title="Top Risk Area Crime Incident Hotspots"
     )
@@ -331,6 +332,7 @@ else:
         opacity=0.7,
         hover_data=["area_name", "crm_cd_desc", "hour"],
         zoom=9,
+        center=dict(lat=34.05, lon=-118.24),
         height=550,
         title="Police Deployment Map: Patrol Priority Zones"
     )
