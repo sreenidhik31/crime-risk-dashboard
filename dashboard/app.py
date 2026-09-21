@@ -235,7 +235,7 @@ if len(map_df_top) > 5000:
 if len(map_df_top) == 0:
     st.warning("No valid latitude/longitude data available.")
 else:
-    fig_map = px.scatter_mapbox(
+    fig_map = px.scatter_map(
         map_df_top,
         lat="lat",
         lon="lon",
@@ -249,7 +249,7 @@ else:
     )
 
     fig_map.update_layout(
-        mapbox_style="carto-positron",
+        map_style="carto-positron",
         margin={"r": 0, "t": 40, "l": 0, "b": 0}
     )
 
@@ -272,14 +272,14 @@ if len(density_df) > 5000:
 if len(density_df) == 0:
     st.warning("No valid location data available for density map.")
 else:
-    fig_density = px.density_mapbox(
+    fig_density = px.density_map(
         density_df,
         lat="lat",
         lon="lon",
         radius=5,
         center=dict(lat=34.05, lon=-118.24),
         zoom=9,
-        mapbox_style="carto-positron",
+        map_style="carto-positron",
         title="Crime Density Heatmap"
     )
 
@@ -321,7 +321,7 @@ if len(deployment_df) > 5000:
 if len(deployment_df) == 0:
     st.warning("Selected area is not classified as an Increase Patrol zone for this year.")
 else:
-    fig_deploy = px.scatter_mapbox(
+    fig_deploy = px.scatter_map(
         deployment_df,
         lat="lat",
         lon="lon",
@@ -336,7 +336,7 @@ else:
     )
 
     fig_deploy.update_layout(
-        mapbox_style="carto-positron",
+        map_style="carto-positron",
         margin={"r": 0, "t": 40, "l": 0, "b": 0}
     )
 
